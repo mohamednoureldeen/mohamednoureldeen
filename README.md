@@ -7,8 +7,7 @@ type TechStack =
   | "SASS"
   | "Tailwind CSS"
   | "Bootstrap"
-  | "Frontend Architecture"
-  | "UI/UX Design";
+  | "Frontend Architecture";
 
 interface DeveloperProfile {
   fullName: string;
@@ -19,8 +18,8 @@ interface DeveloperProfile {
 }
 
 const myProfile: DeveloperProfile = {
-  fullName: "Mohamed Nour Eldin Fawzy Yassin Abdelmalek",
-  title: "Frontend Developer | Angular Specialist | UI/UX Explorer",
+  fullName: "Mohamed Noureldeen",
+  title: "Frontend Developer",
   skills: [
     "Angular",
     "TypeScript",
@@ -30,15 +29,15 @@ const myProfile: DeveloperProfile = {
     "Tailwind CSS",
     "Bootstrap",
     "Frontend Architecture",
-    "UI/UX Design",
   ],
-  bio: "Passionate about building modern, scalable, and visually appealing web applications. I specialize in crafting elegant UI components with Angular and optimizing user experiences with SASS, Tailwind CSS, and Bootstrap.",
+  bio: "Passionate about building modern, scalable, and visually appealing web applications.
+ I specialize in crafting elegant UI components with Angular and optimizing user experiences with SASS,
+ Tailwind CSS, and Bootstrap.",
   getIntroduction() {
     return `👋 Hey there! I'm ${this.fullName}, a ${this.title}. My expertise includes ${this.skills.join(
       ", "
     )}. ${this.bio}`;
   },
 };
-
 console.log(myProfile.getIntroduction());
 ```
