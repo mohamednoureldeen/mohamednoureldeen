@@ -1,3 +1,4 @@
+```typescript
 type TechStack = 
   | "Angular"
   | "TypeScript"
@@ -40,3 +41,4 @@ const myProfile: DeveloperProfile = {
 };
 
 console.log(myProfile.getIntroduction());
+```
